@@ -11,7 +11,8 @@
 		<div class="collapse navbar-collapse" id="ftco-nav">
 			<ul class="navbar-nav ml-auto">
 				<%
-				if (Buyer auth != null) {
+				Buyer auth = (Buyer)request.getAttribute("auth");
+				if (auth != null) {
 				%>
 				<li class="nav-item active"><a class="nav-link"
 					href="BuyerLoginCheck.jsp">HOME<span class="sr-only">(current)</span></a></li>
